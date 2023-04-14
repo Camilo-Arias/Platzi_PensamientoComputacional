@@ -15,7 +15,7 @@ def enumeracion(obj):
     respuesta = 0
 
     while respuesta**2 < objetivo:
-        print(respuesta)
+        # print(respuesta)
         respuesta += 1
 
     if respuesta**2 == objetivo:
@@ -43,22 +43,32 @@ def busquedaBinaria(obj):
     print(f'La raiz cuadrada del {objetivo} es {respuesta}')
 
 def menu(opcion, obj):
-    if opcion==1:
-        aproximacion(obj)
-    elif opcion==2:
-        enumeracion(obj)
-    elif opcion==3:
-        busquedaBinaria(obj)
-    else:
-        print('No hubo opciones')    
+    while opcion != 4:
+        if opcion == 1:
+            aproximacion(obj)
+            break
+        elif opcion == 2:
+            enumeracion(obj)
+            break
+        elif opcion == 3:
+            busquedaBinaria(obj)
+            break
+        else:
+            print('La opción elegida no existe')
+            opcion = int(input('''Menú de opciones
+    1) Raiz cuadrada por aproximación
+    2) Raiz cuadrada por enumeración
+    3) Raiz cuadrada por busqueda binaria
+    4) Salir
+Elige tu opción: '''))  
 
 
 objetivo = int(input('Escoge un entero: '))
 opcion = int(input('''Menú de opciones
-1) Raiz cuadrada por aproximación
-2) Raiz cuadrada por enumeración
-3) Raiz cuadrada por busqueda binaria
-4) Salir
+    1) Raiz cuadrada por aproximación
+    2) Raiz cuadrada por enumeración
+    3) Raiz cuadrada por busqueda binaria
+    4) Salir
 Elige tu opción: '''))
 
 menu(opcion, objetivo)
