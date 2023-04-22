@@ -1,9 +1,11 @@
 def pesoPlanetario(peso, gravedad):
+    # Scope Local
     gravedadTierra = 9.8
     result = (peso / gravedadTierra) * gravedad
     return result
 
 def menu(opcion):
+    # Scope Local
     gravedadMercurio = 3.7
     gravedadVenus = 8.87
     gravedadMarte = 3.711
@@ -15,6 +17,7 @@ def menu(opcion):
     gravedadLuna = 1.622
 
     while opcion != 0:
+        # Scope Local
         pesoTerrestre = float(input("ingrese su peso en kilogramos con (.) si tiene decimales: "))
         if opcion == 1:
             print(f'Su peso en Mercurio es: {pesoPlanetario(pesoTerrestre, gravedadMercurio)}')
@@ -58,6 +61,7 @@ def menu(opcion):
     0) Salir
 Elige tu opción: '''))  
 
+# Scope Global
 opcion = int(input('''Menú de opciones
     1) Peso Mercurio
     2) Peso Venus
