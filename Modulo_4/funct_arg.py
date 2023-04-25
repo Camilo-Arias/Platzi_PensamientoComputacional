@@ -14,6 +14,10 @@ def sumar_dos(n):
     """
     return n + 2
 
+# Fuction lambda es una fuction mas sencilla y puede ser anonima
+# Recibe un nombre restar, 2 parametos, y después de los : un return.
+restar = lambda x, y: x - y
+
 def aplicar_operacion(f, numeros):
     """Aplicará 2 funciones definidas arriba
 
@@ -34,3 +38,6 @@ print(f'Multiplicación de números: {aplicar_operacion(multiplicar_por_dos, num
 
 print(f'Suma de números: {aplicar_operacion(sumar_dos, nums)}')
 # [3, 4, 5]
+
+print(f'resta de números: {restar(9, 5)}')
+# 4
