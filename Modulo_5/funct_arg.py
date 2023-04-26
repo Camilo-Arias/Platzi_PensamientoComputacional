@@ -32,12 +32,24 @@ def aplicar_operacion(f, numeros):
         resultados.append(resultado)
     return resultados
 
-nums = [1, 2, 3]
+# Array vacio
+nums = []
+
+# For de 1 hasta 3 
+for n in range(1, 4):
+    # Captura de datos de usuario para rellenar array
+    numingestado = int(input(f'Ingresa número entero #{n}: '))
+    # Rellenando array nums con append.
+    nums.append(numingestado)
+
+# Imprimiendo array logrado
+print(nums)
+
 print(f'Multiplicación de números: {aplicar_operacion(multiplicar_por_dos, nums)}')
 # [2, 4, 6]
 
 print(f'Suma de números: {aplicar_operacion(sumar_dos, nums)}')
 # [3, 4, 5]
 
-print(f'resta de números: {restar(9, 5)}')
+print(f'resta de números: {restar(nums[0], nums[1])}')
 # 4
