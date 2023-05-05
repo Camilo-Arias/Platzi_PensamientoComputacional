@@ -1,4 +1,9 @@
-diccionario = {"key0": [1,2], "key1": "Listo", "key2": 1234}
+diccionario = {
+  "key0": [1,2], 
+  "key1": "Listo", 
+  "key2": 1234, 
+  "key3": 00
+  }
 
 # Muestra las llaves del diccionario
 # print(diccionario.keys())
@@ -11,13 +16,13 @@ diccionario = {"key0": [1,2], "key1": "Listo", "key2": 1234}
 # print(diccionario['key1'])
 # imprimiendo llave donde está el valor enviado en C
 lugar = 0
-c = 1234
+c = [1,2]
 for index, value in diccionario.items():
-  #print(index, value)
+  # print(index, value)
   if value == c:
     lugar = index
 
 if lugar != 0:
-  print(index)
+  print(lugar)
 else:
   print('no existe')
