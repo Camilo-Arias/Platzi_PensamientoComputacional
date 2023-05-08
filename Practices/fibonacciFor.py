@@ -1,3 +1,5 @@
+# Mostrar series de Fibonacci hasta 10 términos
+
 # Se puede usar recursividad, si se quiere ver el codigo revisarlo en el Modulo 4 en fibonacci.py
 
 a = 0

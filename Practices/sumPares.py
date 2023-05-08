@@ -1,3 +1,5 @@
+# Crear un bucle que cuente todos los números pares hasta el 100
+
 # METODO 1
 # Definiendo sum como entero 
 sum1 = 0
